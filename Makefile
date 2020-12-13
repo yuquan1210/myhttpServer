@@ -26,7 +26,7 @@ git-commit:
 	git checkout master >> .local.git.out || echo
 	git add *.cc *.hh *.l *.y Makefile >> .local.git.out  || echo
 	git commit -a -m  "Web Server" >> .local.git.out || echo
-	git push origin master
+	git push origin main
 
 clean:
 	rm -f *.o use-dlopen hello.so
